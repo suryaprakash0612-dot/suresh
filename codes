@@ -1,0 +1,43 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Edge()
+driver.get("https://www.facebook.com")
+
+print("Facebook opened")
+time.sleep(10)
+
+driver.quit()
+
+google:
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Edge()
+driver.get("https://www.google.com")
+
+print(driver.find_element(By.NAME, "q").is_displayed())
+
+print("TEST passed")
+time.sleep(15)
+
+driver.quit()
+
+  
+  google:
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Edge()
+driver.get("https://www.google.com")
+
+driver.find_element(By.NAME, "q")
+
+print("TEST passed")
+time.sleep(15)
+
+driver.quit()
+  
